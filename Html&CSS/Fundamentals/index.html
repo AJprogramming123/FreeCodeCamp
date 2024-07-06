@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 
-
-
-
+<html lang="en">    <!--Indicating the page in english-->
 <head> <!--Uses metadata about the document-->
-
+    <title>FUNDAMENTALS</title>
 
 
 </head>
@@ -12,6 +10,7 @@
         
     <section>
         <header>
+
             <strong><h1>First part</h1></strong>
 
             <p>This portion shows...</p>
@@ -61,44 +60,153 @@
 
     <section>
 
-    <header>
-        <strong><h1>Second Part</h1></strong>
+            <header>
+                <strong><h1>Second Part</h1></strong>
 
-        <p>This portion shows..</p>
-    </header>
-
-
-    <main>
-        <section>
-            <h4>Groceries:</h4>
-            <ul> <!--An unordered list-->
-                    <li>milk</li>
-                    <li>Apple</li>
-                    <li>Banana</li>
-
-            </ul>
-
-        </section>
-    
+                <p>This portion shows how to use lists and inputs</p>
+            </header>
 
 
-        <figure> <!--represents self-contained content and will allow you to associate an image with a caption-->
-            <img src="Photos/cartoon.png" alt="..It should work lol">
-            <figcaption>Tom & Jerry</figcaption>   <!--This is the used to add a caption in the figure element-->
-        </figure>
+            <main>
+                <section>
+                    <h4>Groceries:</h4>
+                    <ul> <!--An unordered list-->
+                            <li>milk</li>
+                            <li>Apple</li>
+                            <li>Banana</li>
 
-    
+                    </ul>
 
-        <div>
+                </section>
+            
 
-        <em><p>This sentence is emphasized also here's the form</p></em>
+
+                <figure> <!--represents self-contained content and will allow you to associate an image with a caption-->
+                    <img src="Photos/cartoon.png" alt="..It should work lol">
+                    <figcaption>Tom & Jerry</figcaption>   <!--This is the used to add a caption in the figure element-->
+                </figure>
+
+            
+
+                <section>
+
+                    <em><p>This sentence is emphasized also here's the form</p></em>
+
+                    <h3>Ordered List</h3>
+
+                    <ol>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ol>
+
+                    <h3>inputs</h3>
+
+                    <form>
+                        <input type="text" placeholder="Write something lol" name="text">  <!--      Collect data from a web form:           type <-What type of input?          placeholder <-What to put in the input box?          name <- How to form data will be accessed by the location specified.     -->
+                    
+                    
+                        <fieldset>
+
+                        <input id="Male" type="radio" name="gender" value="male">Male
+
+                        <input id="Female"  type="radio" name="gender" value="female">Female
+
+                        <input id="Other" type="radio" name="gender" value="other">other
+
+                        <input id="noSay" type="radio" name="gender" value="noSay">Prefer not to say
+
+                        <button type="radio">Submit</button>    <!--Makes it so that they can only submit one of the choices-->
+                        </fieldset>
+                    
+                    </form>
+                
+
+                </section>
+
+                <footer>
+                    <strong><p>This is the footer of part 2</p></strong>
+                </footer>
+
+            </main>   
+
+    </section>
+
+
+    <section>
+        <header>
+            <strong><h1>Third part</h1></strong>
+            <p>We are the table</p>
+        </header>
+
+        <body>
         
-        <form>
-            <input type="text" placeholder="Write something lol" name="text"> <!--Collect data from a web form-->
+            <h3>Calendar</h3>
+            <table bgcolor="black">
+            
+            <tr bgcolor="grey">    <!--This is the table row-->
+
+                <th>Monday</th> <!--This is the column title-->
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            
+            </tr>
+             
+            <tr bgcolor="lightgrey">
+                <td>1</td>  <!--This is the column data-->
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+
+            <tr bgcolor="lightgrey">    <!--bgcolor is for the color design of the table-->
+                <td>8</td>  <!--This is the column data-->
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+
+            <tr bgcolor="lightgrey">
+                <td>15</td>  <!--This is the column data-->
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+
+            <tr bgcolor="lightgrey">
+                <td>22</td>  <!--This is the column data-->
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+            </table>
+
+        </body>
 
 
-        </form>
 
-        </div>
-    </main>   
+        <footer>
+            <p></p>
+            
+        </footer>
+
+
+    </section>
 </body>
+</html>
