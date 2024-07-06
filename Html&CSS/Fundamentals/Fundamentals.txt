@@ -1,0 +1,302 @@
+HTML-BASICS
+Content area:
+•	‘main’ element is used to represent the main content of the body of an HTML document
+o	<main> </main>
+•	The footer element is used to define a footer for a document or section. A footer typically contains information about the author of the document, copyright data, links to terms of use, contact information, and more. After the main element, add a footer element.
+o	<footer></footer>
+•	The head element is used to contain metadata about the document, such as its title, links to stylesheets, and scripts. Metadata is information about the page that isn’t displayed directly on the page. Add a head element about the body element.
+o	<head></head>
+•	The html element is the root element of a HTML page and wraps all content on the page.
+o	<html></html>
+•	All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications. <!DOCTYPE html> tells browsers that the document is a HTML5 document which is the latest version of HTML. Add this declaration as the first line of the code.
+o	<!DOCTYPE html>
+•	Article represent a self-contained piece of content that could be independently distributed or reused. It has semantic meaning. You’d use article for blog posts, news article, or forum post. Article elements commonly contain multiple elements that have related information.
+o	<article></article>
+
+Image:
+•	You can add images to your website by using the img element.
+o	<img>
+•	Img elements are “like” inline elements.
+
+HTML attributes: (Special words used inside the opening tag of an element to control the element’s behavior)
+•	The src attribute in an img element specified the image’s URL (Where the image is located)
+o	<img src=””>
+•	The alt attribute’s text is used for screen readers to improve accessibility and is displayed if the image fails to load.
+o	<img src=”example.png” alt=”image gone wrong”>
+
+Linking a page:
+•	You can link to another page with the anchor (a) element
+o	<a href=”https://something.com”></a>
+•	Add anchor text to the anchor element. This will become the link’s text.
+o	<a href=”https://something.com”>link to cat pictures</a>
+•	The target attribute specifies where to open the linked document. target=” _blank” opens document in a new tab or window.
+o	<a href=https://something.com” target=”_blank”></a>
+
+Turn text to link:
+•	In the text of your p element, make a link between words by adding opening and closing anchor (a) tags around these words. Then set the href attribute.
+o	<p>Hello world <a href=”https://something.com>cat photo</a> new text</p>
+
+Turn image to link:
+•	Other types of content can also be turned into a link by wrapping it in anchor tags.
+o	<a href=”example-link”> <img src=”image-link.jpg” alt=”A photo of a cat.”> </a>
+
+
+
+
+Section:
+•	The section element is used to define sections in a document, such as chapters, headers, footers, or any other sections of the document. Before adding any new content, you should make use of a section element.
+o	<section></section>
+
+Unordered list:
+•	To create an unordered list of items, you can use the ul element.
+o	<ul></ul>
+•	The li elements is used to create a list item in an ordered or unordered list.
+o	<ul> <li>milk</li> <li>cheese</li> </ul>
+
+Figure:
+•	The figure element represents self-contained content and will allow you to associate an image with a caption.
+o	<figure></figure>
+•	A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element.
+o	<figcaption>A cute cat</figcaption>
+
+Emphasize:
+•	To place emphasis on a specific word or phrase, you can use the em element
+o	<em></em>
+
+Ordered list:
+•	The code for an ordered list (ol) is similar to an unordered list, but list items in an ordered list are numbered when displayed.
+o	<ol></ol>
+
+Strong:
+•	The Strong element is used to indicate that some text is of strong importance or urgent.
+o	<strong></strong>
+
+Form:
+•	The form element is used to get information from a user like their name, email, and other details.
+o	<form></form>
+•	The action attribute indicates where form data should be sent.
+o	<form action=”/submit-url”></form>
+
+
+
+Input:
+•	The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing and do not need closing tags.
+o	<input>
+•	There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button, or a control to let users select a file from their computer.
+o	<input type=”text”>
+•	In order for a form’s data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted.
+o	<input type=”text” name=”name”>
+•	placeholder text is used to give people a hint about what kind of information to enter into an input.
+o	<input type=”text” placeholder=”Ex. Jane Doe”>
+•	To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element.
+o	<input required type=”text” name=”catphotourl” placeholder=”cat photo URL” 
+•	You can use radio buttons for questions where you want only one answer out of multiple options.
+o	<button type=”radio”>
+•	Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+o	<input type=”radio” name=”meal”> Breakfast
+o	<Input type=”radio” name=”meal”> Lunch
+•	If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons. Value attribute is optional, it’s best practice to include it with any checkboxes or radio buttons on the page.
+o	<input id=”indoor” type=”radio” name=”indoor-outdoor” value=”indoor”>Indoor
+o	<input id=”outdoor” type=”radio” name=”indoor-outdoor” value=”outdoor”>outdoor
+•	The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+o	<fieldset>
+o	<input id=”indoor” type=”radio” name=”indoor-outdoor” value=”indoor”>Indoor
+o	<input id=”outdoor” type=”radio” name=”indoor-outdoor” value=”outdoor”>outdoor
+o	</fieldset>
+•	The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter that part of the form.
+o	<fieldset><legend>----</legend><input></input></fieldset>
+•	Forms commonly use checkboxes for questions that may have more than one answer. The input element with a type attribute set to checkbox creates a checkbox.
+o	<input type=”checkbox”>Loving
+•	To make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. It automatically checks the box
+o	<input id=”indoor” checked type=”radio”> 
+
+
+
+Button:
+•	The bottom element is used to create a clickable button. 
+o	<button></button>
+•	The button you added will submit the form by default. However, relying on default behavior may cause confusion. Add the type attribute.
+o	<button type=”submit”>Submit</button>
+
+
+Label:
+•	Label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers)
+o	<label> <input type=”radio”> </label>
+•	There’s another way to associate an input element’s text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element’s id attribute.
+o	<input id=”breakfast” type=”radio” name=”meal” value=”breakfast”>
+o	<label for=”breakfast”> Breakfast </label>
+
+
+
+Id
+•	The id attribute is used to identify specific HTML elements. Each id attribute’s value must be unique from all other id values for the entire page.
+o	<input id=”email”>
+
+Paragraph
+•	To write paragraphs
+o	<p></p>
+
+Title
+•	The title element determines what browsers show in the title bar or tab for the page. Add a title element within the head element.
+o	<title></title>
+
+Language
+•	You can specify the language of your page by adding the lang attribute to the html element.
+•	<html lang=”en”>
+
+div element
+•	The div element is used mainly for design layout purposes unlike the other content elements you have used so far. 
+o	<div></div>
+ 
+
+
+Table
+•	To create a table you’ll need to use <table>
+o	<table></table>
+•	To add a row
+o	<tr></tr>
+•	For table headers, they are inherently bold. Think of this as the column title.
+o	<tr><th>Monday</th></tr>
+•	Adding data to the row. Think of this as the column data.
+o	<td></td>
+•	You can change the color of the table.
+o	<tr bgcolor=”grey”>
+•	Add borders to the table
+o	<table bgcolor=”black”>
+•	To center the cells within a row.
+o	<tr bgcolor=”grey” align=”center”>
+
+Divider line
+•	You can use an hr element to display a divider between sections of different content. They are self-closing.
+o	<hr>
+
+
+
+
+
+
+
+CSS-BASICS
+
+Style types:
+•	In HTML you can add style to an element by specifying it in the style element and setting a property for it:
+o	Element {
+Property: value;
+}
+•	You can add the same group of styles to many elements by creating a list of selectors. Each selector is separated with commas:
+o	p, h1{
+text-align: center;
+}
+•	You need to link the styles.css file, so the styles will be applied again. Inside the head element, add a link element. Give it a rel attribute with the value of “stylesheet” and a href attribute with the value of “styles.css”.
+o	<link rel=”stylesheet” href=”styles.css”>
+•	For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute. Add it within the head element.
+o	<meta name=”viewpoint” content=”width=device-width, initial-scale=1.0” />
+
+•	An id selector is defined by placing the hash symbol # directly in front of the element’s id value.
+o	#cat{___}
+•	A class selector is defined by a name with a dot directly in front of it. It’s secondary to Id.
+o	.class_name{
+styles
+}
+
+
+
+Center content:
+•	You can center the content of an element.
+o	p{
+text-align: center;
+}
+
+Background:
+•	This is for changing the background color of the container
+o	background-color: brown;
+•	If you wanted a background image of a URL
+o	Background-image: url();
+
+
+Width
+•	The goal now is to make the div not take up the entire width of the page. The CSS width property is perfect for this.
+o	#cat {
+width: 250px;			OR		width: 80%;
+}
+
+Center Horizontally container from the page:
+•	You can do this by setting its margin-left and margin-right properties to auto. Think of the margin as invisible space around an element.
+o	#menu{
+    width: 80%;
+    background-color: burlywood;
+    margin-right = auto;
+    margin-left = auto;
+}
+
+Display: inline-block
+•	Makes an element behave like an inline-level element (it doesn’t start on a new line).
+•	Inline-block elements only take up the width of their content. To spread them, add a width property.
+
+
+Backspacing on <p>
+•	Backspacing on a <p> within/next to without a space from another <p> will make both <p> combine into one <p>.
+o	<p>Hello</p><p>World</p> 	== 	HelloWorld
+
+Padding
+•	You can make some space between the content and the sides of the borders with various padding properties.
+o	padding, padding-left/right/top/bottom
+
+ 
+
+
+Max-width:
+•	Like a way to limiter on how far a width property can be. You use it and use width: _%; to change sizes.
+o	max-width: 500px;	<- Meaning only 500px 
+
+
+font family:
+•	You can change the font-family of text, to make it look different from the default font of your browser. Each browser has some common fonts available to it.
+o	font-family: sans-serif;
+•	You can still have the majority of the text sans-seif and make just the h1 and h2 elements different using a different selector.
+•	You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available.
+o	font-family: Impact, serif;		<- serif is the fallback if theres no Impact
+
+font-style
+•	This property specifies the style of the font, such as whether it should be italic, oblique, or normal (which is the default)
+o	font-style: italic;
+•	This is to change the size of the font or words
+o	font-size: 20px;
+
+borders
+•	Notice the edges of the container. Those edges are known as borders, each side of an element can have a different color or they can all.
+o	border: 2px solid black;
+
+
+changing properties of links
+•	You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like:
+o	a:visited {propertyName: propertyValue; }
+o	a:visited
+{
+    color: grey;
+}
+•	You change properties of a link when the mouse hovers over them by using a pseudo-selector.
+o	a: hover {propertName: propertyValue; }
+o	a:hover
+{
+ color: brown;
+}
+•	You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like
+o	 a:active { propertyName:propertValue; }.
+o	a:active
+{
+   color: white;
+}
+
+
+Img
+•	img elements are “like” inline elements. To make the image behave like heading elements (Which are block-level), create an img type selector and use the value block for the display property and use the applicable margin-left and margin-right values to center it horizontally. (block elements are elements that occupy the full width available in their parent container (the container they are within) and start on a new line).
+
+o	img
+{
+   display: block;
+   margin-left: auto;
+   margin-right: auto; 
+
+}
+
