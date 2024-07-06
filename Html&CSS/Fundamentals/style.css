@@ -1,0 +1,52 @@
+body
+{
+    position: static;
+    background-color: lightgreen;
+}
+
+
+section
+{
+    margin-left: auto;  /*Think of the margin as invisible space around an element.*/
+    margin-right: auto;
+
+    text-align: center;     /*This will center it with the parent container*/
+
+    /*Both do the same thing, I recommend using position because display can be used with flexbox and contradicts the page and cause the inline-block to break*/
+    position: relative;
+    display:inline-block; /*This is will make the container shrink to the point of the biggest element in it*/  
+    
+    border: 2px solid black;    /*Usually for containers you use borders to indicate where the container is positioned and maximized.*/
+
+
+    
+}
+
+header,main,footer
+{
+    height: auto;
+    width: auto;
+}
+
+
+
+/*Changing properties of links*/
+a:visited
+{
+    color: pink;
+}
+
+a:hover
+{
+    color: lightblue;
+}
+
+a:active
+{
+    color:black;
+}
+
+img
+{
+    width: 500px;
+}
